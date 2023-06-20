@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<title>Trabalho A1 - AEDV - Parte B</title>
+</head>
+
+<body>
+
+<center>
+
+<h1> Parte B do trabalho da A1 de Análise Exploratória de Dados e Visualização (AEDV) </h1>
+
+<h2> Aluno: Pedro Henrique Coterli <br/>
+Ciência de Dados - 1º período </h2>
+
+<p> A minha imagem SVG consiste na bandeira do meu estado de origem, Mato Grosso, mas com cores harmônicas retiradas de uma imagem do próprio estado. Ela está apresentada a seguir. </p>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500">
+	<rect x="0" y="0" width="800" height="500" style="fill:#022601"/>
+	<polygon points="400,50 750,250 400,450 50,250" style="fill:#F2A74B"/>
+	<circle cx="400" cy="250" r="140" style="fill:#034001"/>
+	<polygon points="400,110 369,207 267,207 349,266 318,363 400,303 482,363 451,266 533,207 431,207" style="fill:#078C03"/>
+</svg>
+
+<p> Primeiramente, eu procurei por uma imagem para obter dela a paleta de cores para minha reprodução. Assim, eu pesquisei simplesmente por "Mato Grosso" no Google e obtive a seguinte foto: </p>
+
+<img src="https://th.bing.com/th/id/R.52195a60a386c139cac041dbfcfb1b7f?rik=wEp4fMO7%2f37zDw&pid=ImgRaw&r=0" width="500">
+
+<p> Meu estado é lindo, não é? </p>
+<p> Em seguida, eu apliquei essa imagem no site Adobe Color para gerar uma paleta harmônica de cores para mim. </p>
+
+<img src="Imagens\Captura de tela 2023-04-06 153021.png" width="500">
+
+<p> Após isso, comecei a elaboração da imagem. Primeiramente, gerei um simples retângulo para ser o fundo da minha bandeira e apliquei a ele uma das cores da paleta. </p>
+
+<img src="Imagens\AEDV_Parte_1 - Retângulo.svg" width="500">
+
+<p> A seguir, comecei a fazer alguns rápidos cálculos matemáticos de cabeça para saber quais pontos deveria conectar a fim de gerar um polígono que seria o losango da bandeira, e, depois de algumas tentativas, cheguei a um resultado razoável, e, é claro, apliquei a ele outra cor da paleta. </p>
+<p> 
+
+<img src="Imagens\AEDV_Parte_1 - Losango.svg" width="500">
+
+<p> Continuando, eu criei um círculo com centro no centro da imagem e com um raio que o tornasse adequado para a bandeira. Assim, após aplicar uma terceira cor da paleta, obtive o seguinte resultado: </p>
+
+<img src="Imagens\AEDV_Parte_1 - Círculo.svg" width="500">
+
+<p> Agora, viria a parte mais desafiadora: a estrela. Como eu poderia encontrar as coordenadas dos vértices da estrela de modo que ela não ficasse estranhamente torta? Bom, eu tive que apelar um pouco para a geometria e para o bom e velho Geogebra. </p>
+<p> Para começar, fui até a coordenada correspondente ao centro da minha circunferência e gerei uma cincunferência semelhante à da imagem. Em seguida, determinei o ponto mais alto da circunferência e, a partir dele e do centro, comecei a gerar ângulos de 72° a fim de conseguir repartir a cincunferência em 5 partes iguais. Feito isso, bastava eu criar segmentos entre esses pontos de repartição de modo a obter a forma de uma estrela e encontrar as interseções entre eles para, enfim, ter conseguido todas as coordenadas necessárias para eu criar um polígono em formato de estrela. </p>
+
+<img src="Imagens\Captura de tela 2023-04-06 154815.png" width="500">
+
+<p> Feito isso, minha criação estava completa! </p>
+
+<img src="Imagens\AEDV_Parte_1.svg" width="500">
+
+<p> No final das contas, o código da minha imagem ficou da seguinte maneira: </p>
+
+</center>
+
+<br/>
+
+<span style="background-color: #FFFF00">
+&lt;svg xmlns="http://www.w3.org/2000/svg" width="800" height="500"&gt; <br/>
+<br/>
+	&lt;rect x="0" y="0" width="800" height="500" style="fill:#022601"/&gt; <br/>
+	&lt;polygon points="400,50 750,250 400,450 50,250" style="fill:#F2A74B"/&gt; <br/>
+	&lt;circle cx="400" cy="250" r="140" style="fill:#034001"/&gt; <br/>
+	&lt;polygon points="400,110 369,207 267,207 349,266 318,363 400,303 482,363 451,266 533,207 431,207" style="fill:#078C03"/&gt; <br/>
+<br/>
+&lt;/svg>
+</span>
+
+<center>
+
+<p> E esse foi o meu texto em HTML explicando a minha criação em SVG. Espero que tenha gostado! </p>
+
+</center>
+</body>
+
+</html>
